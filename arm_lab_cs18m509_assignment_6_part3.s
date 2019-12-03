@@ -22,6 +22,9 @@
 
 _main:
 
+@@@ Recursive implementation of Fibonacci @@@
+@ The stack is recursive updated in the FIBO subroutine for each recursive call @
+
 
 @@@**************************************************************************************************************************
 mov r0, #1                                   @prompt user to enter N to compute Nth fibonacci
