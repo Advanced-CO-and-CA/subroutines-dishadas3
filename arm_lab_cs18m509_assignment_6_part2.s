@@ -57,7 +57,7 @@ ldr r0, =IntRead
 ldr r0, [r0]
 swi 0x6c
 cmp r7, r0                                         @check to see if array is valid (increasing order)
-BGE ERROR_SEEN                                     @branch to ERROR_SEEN and end if array is invalid
+BGT ERROR_SEEN                                     @branch to ERROR_SEEN and end if array is invalid
 str r0, [r1], #4
 mov r7, r0
 subs r4, r4, #1
